@@ -22,3 +22,4 @@ A CLI irá receber três parâmetros:
 - **HTTPoison**: Biblioteca externa que fornece um cliente HTTP, que será utilizado para consumir a API do GitHub.
 - **Poison**: Biblioteca externa que fornece formas de converter JSON em uma estrutura de dados do elixir.
 - **Mix.Config**: Utilizado para definir configurações para o projeto e para separar configurações de acordo com o ambiente em que o projeto está sendo executado.
+- **ExUnit.CaptureIO.capture_io/1**: Utilizado para capturar o resultado enviado para o stdout.
