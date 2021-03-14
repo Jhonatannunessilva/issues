@@ -2,10 +2,20 @@
 
 ## Descrição
 
-Esse projeto é feito com base no projeto do capitulo 13 do livro [Programming Elixir 1.6 - Functional |> Concurrent |> Pragmatic |> Fun](https://www.amazon.com.br/Programming-Elixir-1-6-Dave-Thomas/dp/1680502999), que tem como objetivo criar um CLI (Command Line Interface) que irá buscar as issues mais antigas de um repositório do github.
+Esse projeto foi feito com base no projeto do capitulo 13 do livro [Programming Elixir 1.6 - Functional |> Concurrent |> Pragmatic |> Fun](https://www.amazon.com.br/Programming-Elixir-1-6-Dave-Thomas/dp/1680502999), que tem como objetivo criar um CLI (Command Line Interface) que irá buscar as issues mais antigas de um repositório do github.
 
 ![Imagem ilustrando como o código é estruturado](./images/project_illustration.png)
 Fonte: Imagem retirada do livro citado.
+
+## Como executar o CLI
+
+Clone o projeto, entre dentro do diretório e então execute:
+
+```shell
+➜ mix escript.build
+
+➜ ./issues [user] [project] [count // default = 4]
+```
 
 A CLI irá receber três parâmetros:
 
@@ -23,3 +33,4 @@ A CLI irá receber três parâmetros:
 - **Poison**: Biblioteca externa que fornece formas de converter JSON em uma estrutura de dados do elixir.
 - **Mix.Config**: Utilizado para definir configurações para o projeto e para separar configurações de acordo com o ambiente em que o projeto está sendo executado.
 - **ExUnit.CaptureIO.capture_io/1**: Utilizado para capturar o resultado enviado para o stdout.
+- **mix escript.build**: Comando utilizado para gerar o "executável" do código.
